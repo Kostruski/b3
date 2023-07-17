@@ -28,4 +28,19 @@ export const rules: Required<ModuleOptions>['rules'] = [
       },
     },
   },
+  {
+    test: /\.s[ac]ss$/i,
+    use: [
+      // Creates `style` nodes from JS strings
+      "style-loader",
+      // Translates CSS into CommonJS
+      {loader: "css-loader", options: {
+        modules: {
+        localIdentName: '[path][name]__[local]--[hash:base64:5]',
+        },
+},},
+      // Compiles Sass to CSS
+      "sass-loader",
+    ],
+  },
 ];
