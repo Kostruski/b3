@@ -169,7 +169,7 @@ export default {
     '^.+\\.jsx?$': 'babel-jest',
     '^.+\\.svg$': 'jest-transformer-svg',
     '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$':
-        'jest-transform-stub',
+      'jest-transform-stub',
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation

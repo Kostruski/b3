@@ -1,5 +1,6 @@
 import type { ModuleOptions } from 'webpack';
 
+// eslint-disable-next-line import/prefer-default-export
 export const rules: Required<ModuleOptions>['rules'] = [
   // Add support for native node modules
   {
@@ -32,15 +33,18 @@ export const rules: Required<ModuleOptions>['rules'] = [
     test: /\.s[ac]ss$/i,
     use: [
       // Creates `style` nodes from JS strings
-      "style-loader",
+      'style-loader',
       // Translates CSS into CommonJS
-      {loader: "css-loader", options: {
-        modules: {
-        localIdentName: '[path][name]__[local]--[hash:base64:5]',
+      {
+        loader: 'css-loader',
+        options: {
+          modules: {
+            localIdentName: '[path][name]__[local]--[hash:base64:5]',
+          },
         },
-},},
+      },
       // Compiles Sass to CSS
-      "sass-loader",
+      'sass-loader',
     ],
   },
 ];

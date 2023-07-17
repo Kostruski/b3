@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b90c2585-3cf6-4ee5-af1f-3d47a496b407" name="Changes" comment="add scss modules">
+    <list default="true" id="b90c2585-3cf6-4ee5-af1f-3d47a496b407" name="Changes" comment="add eslint prettier">
+      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/__tests__/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.rules.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.rules.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +40,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -45,21 +65,27 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Marek.Kosturski\Learn\b3\node_modules\prettier" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="ts.external.directory.path" value="C:\Users\Marek.Kosturski\Learn\b3\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Marek.Kosturski\Learn\b3" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Marek.Kosturski\Learn\b3" />
       <recent name="C:\Users\Marek.Kosturski\Learn\b3\src\__tests__" />
@@ -96,7 +122,24 @@
       <workItem from="1689589832465" duration="92000" />
       <workItem from="1689589965081" duration="52000" />
       <workItem from="1689590050261" duration="49000" />
-      <workItem from="1689590102868" duration="3062000" />
+      <workItem from="1689590102868" duration="3448000" />
+      <workItem from="1689593631128" duration="338000" />
+      <workItem from="1689593990520" duration="235000" />
+      <workItem from="1689594248960" duration="1171000" />
+      <workItem from="1689595460833" duration="140000" />
+      <workItem from="1689595629972" duration="1569000" />
+      <workItem from="1689597790633" duration="836000" />
+      <workItem from="1689598659159" duration="665000" />
+      <workItem from="1689599344501" duration="1224000" />
+      <workItem from="1689600603092" duration="1162000" />
+      <workItem from="1689601789164" duration="918000" />
+      <workItem from="1689602730557" duration="462000" />
+      <workItem from="1689603212273" duration="298000" />
+      <workItem from="1689603527522" duration="2197000" />
+      <workItem from="1689606001729" duration="283000" />
+      <workItem from="1689606302909" duration="320000" />
+      <workItem from="1689606642449" duration="1044000" />
+      <workItem from="1689607727078" duration="1813000" />
     </task>
     <task id="LOCAL-00001" summary="run electron forge webpack typescript template">
       <created>1689581490739</created>
@@ -133,7 +176,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689590761567</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add scss modules">
+      <created>1689593420745</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689593420745</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add eslint prettier">
+      <created>1689594424961</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689594424961</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +213,8 @@
     <MESSAGE value="add react" />
     <MESSAGE value="add jest and react testing library" />
     <MESSAGE value="add scss modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="add scss modules" />
+    <MESSAGE value="add eslint prettier" />
+    <option name="LAST_COMMIT_MESSAGE" value="add eslint prettier" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -167,5 +225,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

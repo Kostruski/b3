@@ -1,7 +1,8 @@
-import App from "../src/App";
-import {render} from "@testing-library/react";
+import { render } from '@testing-library/react';
+import React from 'react';
+import App from '../src/App';
 
 it('should test', () => {
-    const {getByText} = render(<App/>)
-    expect(getByText('Hello React')).toBeInTheDocument();
-})
+  const { getByText } = render(<App />);
+  expect(getByText('Hello React')).toBeInTheDocument();
+});
