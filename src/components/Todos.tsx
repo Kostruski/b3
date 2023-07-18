@@ -12,7 +12,7 @@ import {
   Row,
 } from 'reactstrap';
 import { GET_USER_TODOS, UPDATE_TODO } from '../operations';
-import { Todo } from './__generated__/graphql';
+import { Todo } from '../__generated__/graphql';
 
 const Todos: FunctionComponent = () => {
   const [getTodos, { loading, data, error }] = useLazyQuery(GET_USER_TODOS);
@@ -54,7 +54,7 @@ const Todos: FunctionComponent = () => {
                   </CardSubtitle>
                   <CardFooter>
                     <Button onClick={() => toggleTodoCompleted(todo?.id || '')}>
-                      Completed
+                      {todo?.completed ? 'Set not completed' : 'Set completed'}
                     </Button>
                   </CardFooter>
                 </CardBody>

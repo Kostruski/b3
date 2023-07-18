@@ -7,10 +7,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b90c2585-3cf6-4ee5-af1f-3d47a496b407" name="Changes" comment="add appollo grphql and reactstrap">
+    <list default="true" id="b90c2585-3cf6-4ee5-af1f-3d47a496b407" name="Changes" comment="fix CSP in electron">
+      <change afterPath="$PROJECT_DIR$/__tests__/Todos.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/.prettierrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/__tests__/Todos.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/__tests__/Todos.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/__tests__/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/__tests__/setupTests.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/babel.config.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/codegen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/codegen.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/forge.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/forge.config.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jest.config.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/App.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/fragment-masking.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/fragment-masking.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/gql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/gql.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/graphql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/components/Todos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/components/Todos.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/main.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/operations/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/operations/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/preload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/preload.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/renderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/renderer.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/webpack.main.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/webpack.main.config.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/webpack.plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/webpack.plugins.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/webpack.renderer.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/webpack.renderer.config.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/webpack.rules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/webpack.rules.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +128,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
-    <property name="ts.external.directory.path" value="C:\Users\Marek.Kosturski\Learn\b3\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\Marek.Kosturski\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\213.7172.25\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -96,19 +142,19 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="App.test.tsx" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Todos.test.tsx" type="JavaScriptTestRunnerJest" temporary="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/__tests__/App.test.tsx" />
+      <test-file value="$PROJECT_DIR$/__tests__/Todos.test.tsx" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.App.test.tsx" />
+        <item itemvalue="Jest.Todos.test.tsx" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +193,9 @@
       <workItem from="1689654507641" duration="4003000" />
       <workItem from="1689658567782" duration="1692000" />
       <workItem from="1689661706187" duration="189000" />
-      <workItem from="1689662768669" duration="7317000" />
+      <workItem from="1689662768669" duration="13949000" />
+      <workItem from="1689682331549" duration="3299000" />
+      <workItem from="1689685691776" duration="4433000" />
     </task>
     <task id="LOCAL-00001" summary="run electron forge webpack typescript template">
       <created>1689581490739</created>
@@ -233,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689664901171</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix CSP in electron">
+      <created>1689671724630</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1689671724630</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +313,8 @@
     <MESSAGE value="add scss modules" />
     <MESSAGE value="add eslint prettier" />
     <MESSAGE value="add appollo grphql and reactstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="add appollo grphql and reactstrap" />
+    <MESSAGE value="fix CSP in electron" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix CSP in electron" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
