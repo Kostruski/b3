@@ -8,6 +8,7 @@ rules.push({
   use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
 });
 
+// eslint-disable-next-line import/prefer-default-export
 export const rendererConfig: Configuration = {
   module: {
     rules,

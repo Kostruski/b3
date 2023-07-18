@@ -4,6 +4,8 @@ module.exports = {
     es2021: true,
     node: true,
   },
+  root: true,
+  ignorePatterns: ['**/src/__generated__/**'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
@@ -39,6 +41,12 @@ module.exports = {
         'jest/valid-expect': 'error',
       },
     },
+    {
+      files: ['src/index.ts'],
+      rules: {
+        'global-require': 0,
+      },
+    },
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -57,6 +65,15 @@ module.exports = {
     'react/function-component-definition': [
       2,
       { namedComponents: 'arrow-function' },
+    ],
+    'import/extensions': [2, 'never'],
+    'import/no-extraneous-dependencies': [
+      // Test dependencies must not be part of the project's dependencies but may be a devDependency instead
+      'error',
+      {
+        devDependencies: true,
+        packageDir: './',
+      },
     ],
   },
 };

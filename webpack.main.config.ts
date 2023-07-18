@@ -2,6 +2,7 @@ import type { Configuration } from 'webpack';
 
 import { rules } from './webpack.rules';
 
+// eslint-disable-next-line import/prefer-default-export
 export const mainConfig: Configuration = {
   /**
    * This is the main entry point for your application, it's the first file
