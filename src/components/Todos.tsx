@@ -46,11 +46,9 @@ const Todos: FunctionComponent = () => {
             <div>{error?.message || 'no todos'}</div>
           ) : (
             todos.map((todo) => (
-              <Card>
+              <Card key={todo?.id}>
                 <CardBody>
-                  <CardTitle key={todo?.id} id={todo?.id || ''}>
-                    {todo?.title || ''}
-                  </CardTitle>
+                  <CardTitle id={todo?.id || ''}>{todo?.title || ''}</CardTitle>
                   <CardSubtitle>
                     Completed: {todo?.completed?.toString()}
                   </CardSubtitle>
