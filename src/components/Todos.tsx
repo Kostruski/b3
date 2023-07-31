@@ -12,6 +12,8 @@ import {
   Row,
 } from 'reactstrap';
 import { GET_USER_TODOS, UPDATE_TODO } from '../operations';
+
+import styles from './Todos.module.scss';
 import { Todo } from '../__generated__/graphql';
 
 const Todos: FunctionComponent = () => {
@@ -47,7 +49,7 @@ const Todos: FunctionComponent = () => {
           ) : (
             todos.map((todo) => (
               <Card key={todo?.id}>
-                <CardBody>
+                <CardBody className={styles.card}>
                   <CardTitle id={todo?.id || ''}>{todo?.title || ''}</CardTitle>
                   <CardSubtitle>
                     Completed: {todo?.completed?.toString()}
