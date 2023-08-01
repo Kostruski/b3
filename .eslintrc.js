@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require('path');
+
 module.exports = {
   env: {
     browser: true,
@@ -71,8 +74,7 @@ module.exports = {
       // Test dependencies must not be part of the project's dependencies but may be a devDependency instead
       'error',
       {
-        devDependencies: true,
-        packageDir: './',
+        packageDir: path.join(__dirname),
       },
     ],
   },

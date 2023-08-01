@@ -12,7 +12,6 @@ import { rendererConfig } from './webpack.renderer.config';
 const config: ForgeConfig = {
   packagerConfig: {
     asar: true,
-    // ignore: [/\/__tests__($|\/)/],
   },
   rebuildConfig: {},
   makers: [
@@ -41,17 +40,17 @@ const config: ForgeConfig = {
     }),
   ],
   publishers: [
-    // {
-    //   name: '@electron-forge/publisher-github',
-    //   config: {
-    //     repository: {
-    //       owner: 'Kostruski',
-    //       name: 'B3',
-    //     },
-    //     prerelease: false,
-    //     authToken: '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',
-    //   },
-    // },
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'Kostruski',
+          name: 'B3',
+        },
+        prerelease: false,
+        authToken: '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',
+      },
+    },
   ],
 };
 

@@ -11,6 +11,8 @@ import {
   Container,
   Row,
 } from 'reactstrap';
+import { useFlag } from '@unleash/proxy-client-react';
+import classnames from 'classnames';
 import { GET_USER_TODOS, UPDATE_TODO } from '../operations';
 
 import styles from './Todos.module.scss';
@@ -20,6 +22,7 @@ const Todos: FunctionComponent = () => {
   const [getTodos, { loading, data, error }] = useLazyQuery(GET_USER_TODOS);
   const [updateTodo] = useMutation(UPDATE_TODO);
   const todos = data?.user?.todos?.data || ([] as Todo[]);
+  const enabled = useFlag('red');
 
   const getUserTodos = (id: string) => {
     getTodos({ variables: { id } });
@@ -49,7 +52,7 @@ const Todos: FunctionComponent = () => {
           ) : (
             todos.map((todo) => (
               <Card key={todo?.id}>
-                <CardBody className={styles.card}>
+                <CardBody className={classnames({ [styles.card]: enabled })}>
                   <CardTitle id={todo?.id || ''}>{todo?.title || ''}</CardTitle>
                   <CardSubtitle>
                     Completed: {todo?.completed?.toString()}

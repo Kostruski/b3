@@ -32,7 +32,7 @@ const createWindow = (): void => {
         ...details.responseHeaders,
         'Content-Security-Policy': [
           // electron needs websockets https://github.com/w3c/webappsec-csp/issues/7
-          'connect-src self ws: https://graphqlzero.almansi.me/api',
+          'connect-src self ws: https://graphqlzero.almansi.me/api http://localhost:4242',
         ],
       },
     });

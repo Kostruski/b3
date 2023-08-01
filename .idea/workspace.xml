@@ -7,56 +7,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b90c2585-3cf6-4ee5-af1f-3d47a496b407" name="Changes" comment="fix CSP in electron">
-      <change afterPath="$PROJECT_DIR$/__tests__/Todos.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/.prettierrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/__tests__/Todos.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/__tests__/Todos.test.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/__tests__/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/__tests__/setupTests.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/babel.config.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/codegen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/codegen.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/forge.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/forge.config.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/jest.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/jest.config.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/App.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/fragment-masking.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/fragment-masking.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/gql.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/gql.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/graphql.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/__generated__/index.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/components/Todos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/components/Todos.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/index.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/main.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/operations/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/operations/index.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/preload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/preload.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/renderer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/renderer.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/webpack.main.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/webpack.main.config.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/webpack.plugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/webpack.plugins.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/webpack.renderer.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/webpack.renderer.config.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/webpack.rules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/webpack.rules.js.map" afterDir="false" />
+    <list default="true" id="b90c2585-3cf6-4ee5-af1f-3d47a496b407" name="Changes" comment="add scss">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__tests__/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.prettierrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/forge.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/__generated__/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/components/Todos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/operations/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/forge.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/operations/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/operations/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -196,6 +167,10 @@
       <workItem from="1689662768669" duration="13949000" />
       <workItem from="1689682331549" duration="3299000" />
       <workItem from="1689685691776" duration="4433000" />
+      <workItem from="1690810951491" duration="3858000" />
+      <workItem from="1690872052385" duration="2544000" />
+      <workItem from="1690890832018" duration="418000" />
+      <workItem from="1690894207647" duration="2182000" />
     </task>
     <task id="LOCAL-00001" summary="run electron forge webpack typescript template">
       <created>1689581490739</created>
@@ -288,7 +263,42 @@
       <option name="project" value="LOCAL" />
       <updated>1689671724630</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="downgrade typescript, add Apollo tests with types">
+      <created>1690809763096</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1690809763096</updated>
+    </task>
+    <task id="LOCAL-00015" summary="downgrade typescript, add Apollo tests with types">
+      <created>1690810169552</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690810169552</updated>
+    </task>
+    <task id="LOCAL-00016" summary="downgrade typescript, add Apollo tests with types">
+      <created>1690810188178</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690810188178</updated>
+    </task>
+    <task id="LOCAL-00017" summary="downgrade typescript, add Apollo tests with types">
+      <created>1690810365824</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1690810365824</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add scss">
+      <created>1690811761108</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690811761108</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +324,9 @@
     <MESSAGE value="add eslint prettier" />
     <MESSAGE value="add appollo grphql and reactstrap" />
     <MESSAGE value="fix CSP in electron" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix CSP in electron" />
+    <MESSAGE value="downgrade typescript, add Apollo tests with types" />
+    <MESSAGE value="add scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="add scss" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
