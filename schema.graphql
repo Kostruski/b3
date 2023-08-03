@@ -297,3 +297,7 @@ input CompanyInput {
   catchPhrase: String
   bs: String
 }
+
+extend type Query  {
+  userId: String
+}

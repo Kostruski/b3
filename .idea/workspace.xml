@@ -7,24 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b90c2585-3cf6-4ee5-af1f-3d47a496b407" name="Changes" comment="add scss">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+    <list default="true" id="b90c2585-3cf6-4ee5-af1f-3d47a496b407" name="Changes" comment="add local fields to apollo cache">
+      <change afterPath="$PROJECT_DIR$/src/apollo-cilient/client.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/.prettierrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/forge.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/jest.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/__generated__/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/Todos.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/operations/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forge.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/forge.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.graphql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__generated__/gql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/__generated__/gql.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__generated__/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/__generated__/graphql.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/operations/index.ts" afterDir="false" />
@@ -98,7 +87,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="settings.editor.selected.configurable" value="settings.jsgraphql" />
     <property name="ts.external.directory.path" value="C:\Users\Marek.Kosturski\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\213.7172.25\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -171,6 +160,12 @@
       <workItem from="1690872052385" duration="2544000" />
       <workItem from="1690890832018" duration="418000" />
       <workItem from="1690894207647" duration="2182000" />
+      <workItem from="1690896979520" duration="4158000" />
+      <workItem from="1690960266277" duration="532000" />
+      <workItem from="1690961568088" duration="5758000" />
+      <workItem from="1690981623133" duration="7435000" />
+      <workItem from="1691047202067" duration="2338000" />
+      <workItem from="1691052443001" duration="1320000" />
     </task>
     <task id="LOCAL-00001" summary="run electron forge webpack typescript template">
       <created>1689581490739</created>
@@ -298,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690811761108</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add unleash remove dist folder">
+      <created>1690897198220</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1690897198220</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +328,9 @@
     <MESSAGE value="fix CSP in electron" />
     <MESSAGE value="downgrade typescript, add Apollo tests with types" />
     <MESSAGE value="add scss" />
-    <option name="LAST_COMMIT_MESSAGE" value="add scss" />
+    <MESSAGE value="add unleash remove dist folder" />
+    <MESSAGE value="add local fields to apollo cache" />
+    <option name="LAST_COMMIT_MESSAGE" value="add local fields to apollo cache" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

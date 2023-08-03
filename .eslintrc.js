@@ -77,5 +77,6 @@ module.exports = {
         packageDir: path.join(__dirname),
       },
     ],
+    'no-void': ['error', { allowAsStatement: true }],
   },
 };

@@ -13,8 +13,9 @@ import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/
  * Therefore it is highly recommended to use the babel or swc plugin for production.
  */
 const documents = {
-    "\n query GetUserTodos($id: ID!) {\n    user(id: $id) {\n      todos {\n        data {\n         id\n         title\n         completed\n      }\n    }\n  }\n}\n": types.GetUserTodosDocument,
+    "\n query GetUserTodos($id: ID!) {\n    userId @client @export(as: \"id\")\n    user(id: $id) {\n      todos {\n        data {\n         id\n         title\n         completed\n      }\n    }\n  }\n}\n": types.GetUserTodosDocument,
     "\nmutation UpdateTodo($id: ID!, $input: UpdateTodoInput!) {\n updateTodo(id: $id, input: $input) {\n    completed\n    title\n    id\n  }\n}": types.UpdateTodoDocument,
+    "\n    query GetUserId {\n        userId @client\n    }\n": types.GetUserIdDocument,
 };
 
 /**
@@ -34,11 +35,15 @@ export function gql(source: string): unknown;
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function gql(source: "\n query GetUserTodos($id: ID!) {\n    user(id: $id) {\n      todos {\n        data {\n         id\n         title\n         completed\n      }\n    }\n  }\n}\n"): (typeof documents)["\n query GetUserTodos($id: ID!) {\n    user(id: $id) {\n      todos {\n        data {\n         id\n         title\n         completed\n      }\n    }\n  }\n}\n"];
+export function gql(source: "\n query GetUserTodos($id: ID!) {\n    userId @client @export(as: \"id\")\n    user(id: $id) {\n      todos {\n        data {\n         id\n         title\n         completed\n      }\n    }\n  }\n}\n"): (typeof documents)["\n query GetUserTodos($id: ID!) {\n    userId @client @export(as: \"id\")\n    user(id: $id) {\n      todos {\n        data {\n         id\n         title\n         completed\n      }\n    }\n  }\n}\n"];
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
 export function gql(source: "\nmutation UpdateTodo($id: ID!, $input: UpdateTodoInput!) {\n updateTodo(id: $id, input: $input) {\n    completed\n    title\n    id\n  }\n}"): (typeof documents)["\nmutation UpdateTodo($id: ID!, $input: UpdateTodoInput!) {\n updateTodo(id: $id, input: $input) {\n    completed\n    title\n    id\n  }\n}"];
+/**
+ * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function gql(source: "\n    query GetUserId {\n        userId @client\n    }\n"): (typeof documents)["\n    query GetUserId {\n        userId @client\n    }\n"];
 
 export function gql(source: string) {
   return (documents as any)[source] ?? {};

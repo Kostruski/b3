@@ -2,6 +2,7 @@ import { gql } from '../__generated__';
 
 export const GET_USER_TODOS = gql(`
  query GetUserTodos($id: ID!) {
+    userId @client @export(as: "id")
     user(id: $id) {
       todos {
         data {
@@ -22,3 +23,9 @@ mutation UpdateTodo($id: ID!, $input: UpdateTodoInput!) {
     id
   }
 }`);
+
+export const GET_USER_ID = gql(`
+    query GetUserId {
+        userId @client
+    }
+`);

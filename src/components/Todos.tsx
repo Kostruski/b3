@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { useLazyQuery, useMutation } from '@apollo/client';
+import { useLazyQuery, useMutation, useQuery } from '@apollo/client';
 import {
   Button,
   Card,
@@ -11,22 +11,21 @@ import {
   Container,
   Row,
 } from 'reactstrap';
-import { useFlag } from '@unleash/proxy-client-react';
+// import { useFlag } from '@unleash/proxy-client-react';
 import classnames from 'classnames';
-import { GET_USER_TODOS, UPDATE_TODO } from '../operations';
+import { GET_USER_ID, GET_USER_TODOS, UPDATE_TODO } from '../operations';
 
 import styles from './Todos.module.scss';
 import { Todo } from '../__generated__/graphql';
+import { updateUser } from '../apollo-cilient/cache';
 
 const Todos: FunctionComponent = () => {
   const [getTodos, { loading, data, error }] = useLazyQuery(GET_USER_TODOS);
+  const { data: userData } = useQuery(GET_USER_ID);
   const [updateTodo] = useMutation(UPDATE_TODO);
   const todos = data?.user?.todos?.data || ([] as Todo[]);
-  const enabled = useFlag('red');
-
-  const getUserTodos = (id: string) => {
-    getTodos({ variables: { id } });
-  };
+  // const enabled = useFlag('red');
+  const enabled = true;
 
   const toggleTodoCompleted = (id: string) => {
     const completed = !!todos.find((todo) => todo?.id === id)?.completed;
@@ -39,10 +38,19 @@ const Todos: FunctionComponent = () => {
     <Container>
       <Row>
         <Col>
-          <Button onClick={() => getUserTodos('1')}>Fetch user 1 todos</Button>
+          <Button onClick={() => updateUser('1')}>Set user 1</Button>
         </Col>
         <Col>
-          <Button onClick={() => getUserTodos('2')}>Fetch user 2 todos</Button>
+          <Button onClick={() => updateUser('2')}>Set user 2</Button>
+        </Col>
+        <Col>
+          <Button
+            onClick={() => {
+              void getTodos();
+            }}
+          >
+            {`Get todos for user ${userData.userId}`}
+          </Button>
         </Col>
       </Row>
       <Row>
